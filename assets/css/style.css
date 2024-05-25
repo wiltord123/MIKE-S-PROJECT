@@ -88,7 +88,7 @@ img {
 /* Styles for the navigation bar (.navbar) */
 .navbar-nav .nav-link {
     font-weight: 500;  /* Set font weight for navigation links */
-    color: white !important;  /* Set color for navigation links */
+    color: rgb(123, 122, 122) !important;  /* Set color for navigation links */
 }
 
 .navbar-nav .nav-link.active {
@@ -96,10 +96,20 @@ img {
 }
 
 .navbar-nav .nav-item:hover .nav-link {
-    color: #a1a0a0 !important; /* Change color for navigation links on hover */
+    color: #b0afaf !important; /* Change color for navigation links on hover */
 }
 
 /* Styles for buttons (.btn) */
+.signup-container
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+
 .btn {
     font-weight: 600;  /* Set font weight for buttons */
     font-size: 10px;  /* Set font size for buttons */
@@ -117,4 +127,26 @@ img {
 .btn-brand:hover {
     background-color: #ff6600;  /* Change background color on hover */
     color: white;  /* Maintain white text color on hover */
+}
+
+.signup-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #ff4500;
+}
+
+.btn-brand-create {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+}
+
+.btn-brand-create:hover {
+    background-color: #e03e00;
 }
