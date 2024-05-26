@@ -232,3 +232,16 @@ body{
     margin-left: auto;  /* Center the paragraph text horizontally */
     margin-right: auto;  /* Center the paragraph text horizontally */
 }
+
+/* Styles for icon boxes (.iconbox) */
+.iconbox{
+    width: 70px;  /* Set width for the icon box */
+    height: 70px;  /* Set height for the icon box */
+    display: inline-flex;  /* Display the icon box as an inline-flex element */
+    align-items: center;  /* Align content vertically within the icon box */
+    justify-content: center;  /* Align content horizontally within the icon box */
+    background: rgba(var(--c-brand-rgb), 0.1);  /* Set background color with transparency */
+    color: blue;  /* Set icon color */
+    font-size: 44px;  /* Set font size for the icon */
+    flex: none;  /* Prevent the icon box from shrinking/growing with flexbox */
+}
