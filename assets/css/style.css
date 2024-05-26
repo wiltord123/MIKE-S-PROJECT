@@ -5,8 +5,8 @@
 /* Define global variables for colors, fonts, etc. */
 :root {
     --c-dark: #212529;  /* Dark color */
-    --c-brand: #4e57d4;  /* Brand blue color */
-    --c-brand-light: #6970dd;  /* Light blue color, adjusted */
+    --c-brand: #d4a14e;  /* Brand blue color */
+    --c-brand-light: #ddba69;  /* Light blue color, adjusted */
     --c-brand-rgb: 78, 87, 212;  /* Brand blue color in RGB format */
     --c-body: #727272;  /* Body text color */
     --font-base: 'Clash Display', sans-serif;  /* Base font family */
@@ -31,12 +31,12 @@ h1, h2, h3, h4, h5, h6,
 /* Style anchor tags (links) */
 a {
     text-decoration: none;  /* Remove underline from links */
-    color: var(--c-brand);  /* Set default link color */
+    color: #F52026;  /* Set default link color */
     transition: var(--transition);  /* Apply default transition animation */
 }
 
 a:hover {
-    color: var(--c-brand-light);
+    color: #f56920;
 }  /* Change link color on hover */
 
 /* Style all image elements */
@@ -93,7 +93,7 @@ img {
 /* Styles for the navigation bar (.navbar) */
 .navbar-nav .nav-link {
     font-weight: 500;  /* Set font weight for navigation links */
-    color: rgb(123, 122, 122) !important;  /* Set color for navigation links */
+    color: rgb(123, 122, 122);  /* Set color for navigation links */
 }
 
 .navbar-nav .nav-link.active {
@@ -101,7 +101,7 @@ img {
 }
 
 .navbar-nav .nav-item:hover .nav-link {
-    color: #b0afaf !important; /* Change color for navigation links on hover */
+    color: #b0afaf /* Change color for navigation links on hover */
 }
 
 /* Styles for buttons (.btn) */
@@ -199,10 +199,12 @@ body{
     margin-bottom: 40px;
 }
 
-.btn-primary {
+.btn-seconary {
     background-color: #ff4500;
+    color: white;
     border: none;
 }
-.btn-primary:hover {
-    background-color: #e03e00;
+
+.btn-lg:hover{
+    background-color: #ff6600;
 }
