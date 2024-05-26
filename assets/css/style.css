@@ -5,7 +5,7 @@
 /* Define global variables for colors, fonts, etc. */
 :root {
     --c-dark: #212529;  /* Dark color */
-    --c-brand: #d4a14e;  /* Brand blue color */
+    --c-brand: #d47b4e;  /* Brand blue color */
     --c-brand-light: #ddba69;  /* Light blue color, adjusted */
     --c-brand-rgb: 78, 87, 212;  /* Brand blue color in RGB format */
     --c-body: #727272;  /* Body text color */
@@ -97,7 +97,7 @@ img {
 }
 
 .navbar-nav .nav-link.active {
-    color: var(--c-brand);  /* Change color for active navigation link */
+    color: rgb(123, 122, 122);  /* Change color for active navigation link */
 }
 
 .navbar-nav .nav-item:hover .nav-link {
@@ -203,6 +203,12 @@ body{
     background-color: #ff4500;
     color: white;
     border: none;
+}
+
+.btn-lg{
+    background-color: #ff4500;
+    color: white;
+
 }
 
 .btn-lg:hover{
