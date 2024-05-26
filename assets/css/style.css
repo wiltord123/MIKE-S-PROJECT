@@ -1,5 +1,6 @@
 /* Import additional styles from another CSS file */
 @import url(../css/clash-display.css);
+@import url('https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&display=swap'); /* Ensure Clash Display is loaded */
 
 /* Define global variables for colors, fonts, etc. */
 :root {
@@ -8,8 +9,8 @@
     --c-brand-light: #6970dd;  /* Light blue color, adjusted */
     --c-brand-rgb: 78, 87, 212;  /* Brand blue color in RGB format */
     --c-body: #727272;  /* Body text color */
-    --font-base: "clashdisplay", sans-serif;  /* Base font family */
-    --box-shadow: 0px 15px 25px rgb(215, 213, 213);  /* Box shadow definition */
+    --font-base: 'Clash Display', sans-serif;  /* Base font family */
+    --box-shadow: 0px 15px 25px rgb(57, 55, 55);  /* Box shadow definition */
     --transition: all 0.5s ease;  /* Default transition animation for smooth effects */
 }
 
@@ -76,6 +77,10 @@ img {
 
 /* navbar */
 .navbar {
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Position it at the top */
+    width: 100%; /* Take the full width of the viewport */
+    z-index: 1000; /* Ensure it's above other content */
     box-shadow: var(--box-shadow);  /* Apply box shadow from defined variable */
     background-color: #333;  /* Set navbar background color */
 }
@@ -109,7 +114,6 @@ body{
     background-color: #f8f9fa;
 }
 
-
 .btn {
     font-weight: 600;  /* Set font weight for buttons */
     font-size: 10px;  /* Set font size for buttons */
@@ -127,6 +131,7 @@ body{
 .btn-brand:hover {
     background-color: #ff6600;  /* Change background color on hover */
     color: white;  /* Maintain white text color on hover */
+    border-top-color: white;
 }
 
 .signup-container {
@@ -179,20 +184,21 @@ body{
     z-index: 2;
 }
 .hero h1 {
+    font-family: var(--font-base); /* Apply Clash Display font */
     font-size: 4rem;
     margin-bottom: 20px;
-    padding-bottom: 70px;
-    display: 1;
+    display: block;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .hero p {
+    font-family: 'Clash Display', sans-serif; /* Apply Clash Display font */
     font-size: 1.5rem;
     margin-bottom: 40px;
 }
+
 .btn-primary {
     background-color: #ff4500;
     border: none;
