@@ -5,7 +5,7 @@
 /* Define global variables for colors, fonts, etc. */
 :root {
     --c-dark: #212529;  /* Dark color */
-    --c-brand: #d47b4e;  /* Brand blue color */
+    --c-brand: #f00008b3;  /* Brand blue color */
     --c-brand-light: #ddba69;  /* Light blue color, adjusted */
     --c-brand-rgb: 78, 87, 212;  /* Brand blue color in RGB format */
     --c-body: #727272;  /* Body text color */
@@ -199,7 +199,7 @@ body{
     margin-bottom: 40px;
 }
 
-.btn-seconary {
+.btn-secondary {
     background-color: #ff4500;
     color: white;
     border: none;
