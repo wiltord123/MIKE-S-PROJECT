@@ -214,3 +214,21 @@ body{
 .btn-lg:hover{
     background-color: #ff6600;
 }
+
+/* Styles for section titles (.section-title) */
+.section-title {
+    margin-bottom: 60px;  /* Add spacing below the section title */
+}
+
+.section-title .line{
+    width: 60px;  /* Set width for the horizontal line below the title */
+    height: 4px;  /* Set height for the horizontal line */
+    background-color: var(--c-brand);  /* Set background color of the line */
+    margin: 16px auto 24px auto;  /* Set margins for the line (top, right, bottom, left) */
+}
+
+.section-title p{
+    max-width: 500px;  /* Set maximum width for the paragraph text */
+    margin-left: auto;  /* Center the paragraph text horizontally */
+    margin-right: auto;  /* Center the paragraph text horizontally */
+}
