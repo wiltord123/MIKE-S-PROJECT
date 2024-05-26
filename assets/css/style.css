@@ -245,3 +245,39 @@ body{
     font-size: 44px;  /* Set font size for the icon */
     flex: none;  /* Prevent the icon box from shrinking/growing with flexbox */
 }
+
+/* Styles for service sections (.service) */
+.service{
+    position: relative;  /* Set the position to relative for proper layering */
+    overflow: hidden;  /* Hide overflowing content (might be useful for specific effects) */
+    z-index: 2;  /* Set stacking order to ensure elements appear above others */
+}
+
+.service::after {
+    content: "";  /* Add an empty pseudo-element for styling */
+    width: 40px;  /* Set width for the pseudo-element */
+    height: 40px;  /* Set height for the pseudo-element */
+    background-color: rgba(var(--c-brand-rgb), 0.2); /* Set background color with transparency */
+    position: absolute;  /* Set absolute position for the pseudo-element */
+    bottom: 0;  /* Position the pseudo-element at the bottom */
+    right: 0;  /* Position the pseudo-element at the right */
+    transition: var(--transition);  /* Apply transition animation for smooth effect */
+  }
+
+.service:hover::after{
+    width: 100%;  /* Expand to cover the entire service section on hover */
+    height: 100%;   /* Expand to cover the entire service section on hover */
+    background: var(--c-brand);  /* Change background color to brand blue on hover */
+    z-index: -1;/* Set stacking order below other elements within the service section */
+}
+
+.service:hover h5,
+.service:hover p{
+    color: white;  /* Change heading (h5) and paragraph text color to white on hover */
+}
+
+/* Corrected selector for hover state of the icon box */
+.service:hover .iconbox {
+    background: rgba(255,255,255,0.2);  /* Set background color with transparency on hover */
+    color: white;  /* Change icon color to white on hover */
+}
