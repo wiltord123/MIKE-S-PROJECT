@@ -311,40 +311,61 @@ body{
 
 /* portfolio */
 .portfolio-item {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-zoom-warpper {
+            width: 100%;
+            height: 400px; /* Set the height you desire */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-zoom-warpper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+        }
+
+        .portfolio-item .iconbox {
+            background-color: var(--c-brand);
+            color: white;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.3s, top 0.3s;
+        }
+
+        .portfolio-item:hover .iconbox {
+            opacity: 1;
+            top: 50%;
+        }
+
+        .mb-4 {
+            margin-bottom: 1.5rem;
+        }
+
+        /* review */
+.review small{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--c-brand);
+}
+
+.review-head{
     position: relative;
-    overflow: hidden;
 }
 
-.image-zoom-warpper {
-    width: 100%;
-    height: 400px; /* Set the height you desire */
-    position: relative;
-    overflow: hidden;
-}
-
-.image-zoom-warpper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
-}
-
-.portfolio-item .iconbox {
-    background-color: var(--c-brand);
-    color: white;
+.review-head::after{
+    content: "";
+    width: 28px;
+    height: 28px;
     position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s, top 0.3s;
-}
-
-.portfolio-item:hover .iconbox {
-    opacity: 1;
-    top: 50%;
-}
-
-.mb-4 {
-    margin-bottom: 1.5rem;
+    bottom: -14px;
+    background-color: white;
+    transform: rotate(45deg);
 }
 
