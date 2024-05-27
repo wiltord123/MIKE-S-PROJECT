@@ -281,3 +281,30 @@ body{
     background: rgba(255,255,255,0.2);  /* Set background color with transparency on hover */
     color: white;  /* Change icon color to white on hover */
 }
+
+/* counter */
+#counter {
+    position: relative;
+    background: url('../images.png/dressed.png') center center / cover no-repeat;
+    padding: 60px 0; /* Adjust as needed for your layout */
+}
+
+#counter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(19, 19, 19, 0.833); /* Black transparency */
+    z-index: 1;
+}
+
+.counter {
+    position: relative;
+    z-index: 2;
+}
+
+.counter h6 {
+    color: rgb(255, 106, 0);
+}
