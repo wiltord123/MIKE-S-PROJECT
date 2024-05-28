@@ -14,9 +14,25 @@
     --transition: all 0.5s ease;  /* Default transition animation for smooth effects */
 }
 
-.logo-bar{
-    width: 90px;
+.logo-bar img {
+    width: 100%;
+    max-width: 90px;
+    height: auto;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo-bar img {
+        max-width: 70px;  /* Smaller logo for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-bar img {
+        max-width: 50px;  /* Even smaller logo for very small screens */
+    }
+}
+
 
 /* Set styles for the body element */
 body {
