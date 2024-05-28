@@ -20,6 +20,13 @@
     height: auto;
 }
 
+.logo-hero{
+    max-width: 200px;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .logo-bar img {
